@@ -1,0 +1,26 @@
+theme = "hyde"
+baseURL = "/"
+languageCode = "en-us"
+title = "[Rose, Cols]"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[params]
+  themeColor = "theme-base-0e"
+  description = "Lost in a world of rows & columns. NYC Data Scientist"
+  layoutReverse = true
+  
+[Menus]
+  main = [
+      {Name = "Github", URL = "https://github.com/rm2765/"},
+      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/rmartinez6215/"}
+  ]
+  
+## Social Accounts
+[params.social]
+    github = "romartinez-nycc"
+    linkedin = "rmartinez6215"
+    twitter = "NYCCouncilData"
+    stackoverflow = "rm1104"
+    email = "rm2765@nyu.edu"
+
+
