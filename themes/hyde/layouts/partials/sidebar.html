@@ -1,11 +1,24 @@
 <aside class="sidebar">
   <div class="container sidebar-sticky">
+    {{ if and (isset .Site.Params "authorimage") (not (isset .Site.Params.social "gravatar")) }}
+{{ with .Site.Params.authorimage }}
+{{ $strippedSlash := ($.Site.Params.authorimage | replaceRE "^(/)+(.*)" "$2") }}
+{{ $authorImage := (printf "%s%s" $.Site.BaseURL $strippedSlash) }}
+
+<div class="author-image">
+  <img src="{{$authorImage}}" alt="Author Image" style="width: 250px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto;">
+  </div>
+
+  {{ end }}
+{{ end }}
+    
     <div class="sidebar-about">
       <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
       <p class="lead">
       {{ with .Site.Params.description }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
       </p>
     </div>
+    
 
     <nav>
       <ul class="sidebar-nav">

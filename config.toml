@@ -8,6 +8,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   themeColor = "theme-base-0e"
   description = "Lost in a world of rows & columns. NYC Data Scientist"
   layoutReverse = true
+  authorimage = "img/Flower_PaulHoppe.jpg"
   
 [Menus]
   main = [
@@ -21,6 +22,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     linkedin = "rmartinez6215"
     twitter = "NYCCouncilData"
     stackoverflow = "rm1104"
-    email = "rm2765@nyu.edu"
+   # email = "rm2765@nyu.edu"
 
 
