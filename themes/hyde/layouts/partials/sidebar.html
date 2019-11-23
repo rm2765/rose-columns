@@ -6,7 +6,7 @@
 {{ $authorImage := (printf "%s%s" $.Site.BaseURL $strippedSlash) }}
 
 <div class="author-image">
-  <img src="{{$authorImage}}" alt="Author Image" style="width: 250px; border-radius: 50%; display: block; margin-left: auto; margin-right: auto;">
+  <img src="{{$authorImage}}" alt="Author Image" style="width: 175px; border-radius: 50%; display: center; margin-left: auto; margin-right: auto;">
   </div>
 
   {{ end }}
@@ -14,21 +14,36 @@
     
     <div class="sidebar-about">
       <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+      
       <p class="lead">
       {{ with .Site.Params.description }} {{.}} {{ else }}An elegant open source and mobile first theme for <a href="http://hugo.spf13.com">hugo</a> made by <a href="http://twitter.com/mdo">@mdo</a>. Originally made for Jekyll.{{end}}
       </p>
+      
     </div>
-    
-
-    <nav>
+  
+   
       <ul class="sidebar-nav">
-        <li><a href="{{ .Site.BaseURL }}">Home</a> </li>
+        <!-- <li><a href="{{ .Site.BaseURL }}">Home</a> </li> 
         {{ range .Site.Menus.main -}}
           <li><a href="{{.URL}}"> {{ .Name }} </a></li>
-        {{- end }}
-      </ul>
-    </nav>
+        {{- end }} -->
+        
+         
+   <!-- <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">{{ .Site.Title }}</label>-->
+      <div class="menu-content">
+        {{ partial "menu.html" . }}
+     {{ partial "sidebar/social.html" . }}
 
-    <p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}</p>
+    <!--  </div>-->
+    </div>
+        
+        
+      </ul>
+    
+  
+
+    <p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. Created with Hugo. Theme Hyde. {{end}}</p>
   </div>
 </aside>

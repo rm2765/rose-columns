@@ -36,7 +36,7 @@ html {
 }
 @media (min-width: 48em) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 @media (min-width: 58em) {
@@ -65,7 +65,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 14rem;
     text-align: left;
   }
 }
@@ -80,13 +80,15 @@ html {
   color: #fff;
   margin-top: 0;
   font-family: 'Merienda', cursive;
-  font-size: 2.35rem;
+  font-size: 1.7rem;
 }
+
 
 /* Sidebar nav */
 .sidebar-nav {
   padding-left: 0;
   list-style: none;
+  text-align: center;
 }
 .sidebar-nav-item {
   display: block;
@@ -98,6 +100,8 @@ a.sidebar-nav-item:focus {
 .sidebar-nav-item.active {
   font-weight: bold;
 }
+
+
 
 /* Sticky sidebar
  *

@@ -6,15 +6,28 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
   themeColor = "theme-base-0e"
-  description = "Lost in a world of rows & columns. NYC Data Scientist"
+  description = "Lost in a world of rows & columns."
   layoutReverse = true
   authorimage = "img/Flower_PaulHoppe.jpg"
   
-[Menus]
-  main = [
-      {Name = "Github", URL = "https://github.com/rm2765/"},
-      {Name = "LinkedIn", URL = "https://www.linkedin.com/in/rmartinez6215/"}
-  ]
+  
+#[Menus]
+#  main = [
+#      {Name = "Posts", URL = "/"},
+#      {Name = "About", URL = "/"}
+#  ]
+
+## Main Menu
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 300
+    url = "/about/"
   
 ## Social Accounts
 [params.social]
@@ -22,6 +35,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     linkedin = "rmartinez6215"
     twitter = "NYCCouncilData"
     stackoverflow = "rm1104"
-   # email = "rm2765@nyu.edu"
+    email = "rm2765@nyu.edu"
+
 
 
