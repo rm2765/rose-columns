@@ -1,11 +1,11 @@
 theme = "hyde"
-baseURL = "/"
+baseURL = "https://rose-columns.netlify.com/"
 languageCode = "en-us"
 title = "[Rose, Cols]"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
-  themeColor = "theme-base-0e"
+  themeColor = "theme-base-0g"
   description = "Lost in a world of rows & columns."
   layoutReverse = true
   authorimage = "img/Flower_PaulHoppe.jpg"
@@ -34,7 +34,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     github = "romartinez-nycc"
     linkedin = "rmartinez6215"
     twitter = "NYCCouncilData"
-    stackoverflow = "rm1104"
+    stackoverflow = "8909362/rm1104"
     email = "rm2765@nyu.edu"
 
 

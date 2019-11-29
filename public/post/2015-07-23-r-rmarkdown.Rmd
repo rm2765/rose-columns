@@ -1,7 +1,7 @@
 ---
-title: "Hello R Markdown"
-author: "Frida Gomam"
-date: 2015-07-23T21:13:14-05:00
+title: "Learning Spatial Stats: Day One "
+author: "Rose Martinez"
+date: '`r Sys.Date()`'
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
 ---
@@ -10,9 +10,10 @@ tags: ["R Markdown", "plot", "regression"]
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-# R Markdown
+## Reading 
+### "Analyzing spatio-temporal data with R: Everything you always wanted to know – but were afraid to ask"
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+Beginning my spatial statistical learning by reading [Analyzing spatio-temporal data with R: Everything you always wanted to know – but were afraid to ask](https://www.researchgate.net/publication/320223143_Analyzing_spatio-temporal_data_with_R_Everything_you_always_wanted_to_know_-_but_were_afraid_to_ask)
 
 You can embed an R code chunk like this:
 
